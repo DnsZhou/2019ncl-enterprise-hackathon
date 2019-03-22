@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="./css/FesMain.css">
+    <title>Welcome to Newcastle!</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">Firstep Newcastle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Activities<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Shopping</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href=".">For Men</a>
+                        <a class="dropdown-item" href=".">For Women</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://github.com/DnsZhou/2019ncl-enterprise-hackathon/blob/master/README.md">About</a>
+                </li>
+            </ul>
+
+            <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false" id="userName"></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="logOut()" href="./login.html">LogOut</a>
+                    </div>
+                </li>
+            </ul> -->
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="py-5 text-center">
+            <h2>OnGoing Activities</h2>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1"><b><a href="https://www.ncl.ac.uk/info/legal/">&copy; 2019 Newcastle University</a></b> -- </p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.ncl.ac.uk/info/socialmedia/">Contact Us</a></li>
+                <li class="list-inline-item"><a href="https://www.ncl.ac.uk/info/accessibility/">Accessibility</a></li>
+                <li class="list-inline-item"><a href="https://www.ncl.ac.uk/info/legal/">Legal</a></li>
+            </ul>
+        </footer>
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Notify -->
+    <script src="./js/vendor/bootstrap-notify.min.js"></script>
+
+    <!-- AWS Cognito Library -->
+    <script src="./js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="./js/vendor/amazon-cognito-identity.min.js"></script>
+
+    <!-- AWS API SDK -->
+    <script type="text/javascript" src="./js/lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="./js/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="./js/lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="./js/lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="./js/lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="./js/lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="./js/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="./js/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="./js/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="./js/lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="./js/apigClient.js"></script>
+
+    <!-- Customized JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/notify.js"></script>
+
+    <!-- User Login Verification and logout function, Uncomment below to activate it -->
+    <!-- <script src="./js/userOperation.js"></script> -->
+    <script src="./js/upload.js"></script>
+</body>
+
+</html>
