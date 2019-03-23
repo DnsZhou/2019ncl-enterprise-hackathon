@@ -11,6 +11,8 @@ function getAllActivities() {
             result.data.forEach((activity) => {
                 $("#slidesArea").append(generateActivitySlide(activity));
             })
+            for (i = 0; i < result.data.length; i++)
+                $("#slideNums").append('<li data-target="#carouselExampleCaptions" data-slide-to="'+i+'"></li>')
             $("#slidesArea").children("div:first-child").addClass("active");
         }).catch(function (result) {
             // Add error callback code here.
