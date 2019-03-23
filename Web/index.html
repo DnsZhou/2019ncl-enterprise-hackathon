@@ -38,8 +38,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"
-                        href="">Food</a>
+                    <a class="nav-link" href="">Food</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
@@ -63,9 +62,32 @@
         <div class="py-5 text-center">
             <h2>OnGoing Activities</h2>
         </div>
+        <div id="activitiesArea"></div>
+
+
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" id="slidesArea">
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
 
         <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1"><b><a href="https://www.ncl.ac.uk/info/legal/">&copy; 2019 Newcastle University</a></b> -- </p>
+            <p class="mb-1"><b><a href="https://www.ncl.ac.uk/info/legal/">&copy; 2019 Newcastle University</a></b> -- Enterprise Hackathon
+            </p>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="https://www.ncl.ac.uk/info/socialmedia/">Contact Us</a></li>
                 <li class="list-inline-item"><a href="https://www.ncl.ac.uk/info/accessibility/">Accessibility</a></li>
@@ -107,14 +129,12 @@
     <script type="text/javascript" src="./js/apigClient.js"></script>
 
     <!-- Customized JS -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
-    <script src="./js/config.js"></script>
-    <script src="./js/notify.js"></script>
+    <script type="text/javascript" src="./js/config.js"></script>
+    <script type="text/javascript" src="./js/notify.js"></script>
 
     <!-- User Login Verification and logout function, Uncomment below to activate it -->
     <!-- <script src="./js/userOperation.js"></script> -->
-    <script src="./js/upload.js"></script>
+    <script type="text/javascript" src="./js/activity.js"></script>
 </body>
 
 </html>

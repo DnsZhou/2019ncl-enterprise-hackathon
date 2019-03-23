@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    verifyUserLogin();
+    // verifyUserLogin();
     var body = {
-        jwt: jwtToken
+        // jwt: jwtToken
     };
 
-    apigClient.transactionGetunreadinboundPost({}, body, {}).then(function (messageList) {
-        messageList.data.forEach(trans => {
-            addNotify(trans.sender, trans.transactionId)
-        });
-    })
+    // apigClient.transactionGetunreadinboundPost({}, body, {}).then(function (messageList) {
+    //     messageList.data.forEach(trans => {
+    //         addNotify(trans.sender, trans.transactionId)
+    //     });
+    // })
 
 })
 
